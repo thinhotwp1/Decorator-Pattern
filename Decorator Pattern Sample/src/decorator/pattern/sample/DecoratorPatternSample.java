@@ -18,9 +18,10 @@ public class DecoratorPatternSample {
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("===== Buy an espresso =====");
-        Beverage espresso = new Espresso();
-        espresso.setSize(Beverage.VENTI);
-        espresso = new Mocha(espresso);
+        Beverage espresso = new Espresso(); // khai báo loại đồ uống
+        espresso.setSize(Beverage.VENTI); // khai báo size
+        espresso = new Mocha(espresso); // gọi thêm topping Mocha cho cốc espresso
+        // Sau khi gọi mocha bằng espresso, mocha nhận size và cost tương ứng theo espresso
         System.out.println(espresso.getDescription()+" $"+espresso.cost());
         
         System.out.println("===== Buy a HouseBlend =====");

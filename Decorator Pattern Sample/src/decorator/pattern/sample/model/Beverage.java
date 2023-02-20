@@ -9,8 +9,8 @@ package decorator.pattern.sample.model;
  * @author Administrator
  */
 public abstract class Beverage {
-    String description = "Unknow Beverage";
-    Integer size;
+    String description = "Unknow Beverage"; // Chưa rõ loại đồ uống
+    Integer size; // size đồ uống
     
     public static Integer TALL = 1;
     public static Integer GRANDE = 2;

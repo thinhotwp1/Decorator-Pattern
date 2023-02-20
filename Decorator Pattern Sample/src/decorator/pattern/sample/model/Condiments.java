@@ -4,11 +4,13 @@
  */
 package decorator.pattern.sample.model;
 
+import decorator.pattern.sample.model.Beverage;
+
 /**
  *
  * @author Administrator
  */
-public abstract class Condiments extends Beverage{
+public abstract class Condiments extends Beverage{ // Condiments: topppings
     @Override
     public abstract String getDescription();
 }

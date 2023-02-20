@@ -4,6 +4,7 @@
  */
 package decorator.pattern.sample.model;
 
+import decorator.pattern.sample.model.Beverage;
 import java.util.Objects;
 
 /**
@@ -31,11 +32,11 @@ public class Mocha extends Condiments {
     public double cost() {
         double cost = beverage.cost() ;
         if (Objects.equals(beverage.size, Beverage.TALL)) {
-             cost +=  .1;
+             cost +=  0.1;
         }if (Objects.equals(beverage.size, Beverage.GRANDE)) {
-             cost +=  .15;
+             cost +=  0.15;
         }if (Objects.equals(beverage.size, Beverage.VENTI)) {
-             cost +=  .2;
+             cost +=  0.2;
         }
         return cost;
     }
